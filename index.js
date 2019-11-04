@@ -48,8 +48,14 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processFirstItem(stringList, callback) {
-  return callback(stringList[0])
+function processLength(list, callback) {
+  /* CODE HERE */
+  // console.log(list)
+  // console.log(list.length)
+  // console.log(callback)
+  // console.log(callback(list))
+  // console.log(callback(list.length))
+  return callback(list.length)
 }
 
 /**
@@ -66,8 +72,10 @@ function processFirstItem(stringList, callback) {
  * Invoking `processLastItem` passing `['foo', 'bar']` and `(str) => str + str`,
  * should return 'barbar'.
 */
-function processLastItem(/* CODE HERE */) {
+function processLastItem(stringList, callback) {
   /* CODE HERE */
+  // console.log(stringList)
+  return callback(stringList[stringList.length - 1])
 }
 
 /**
